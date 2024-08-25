@@ -1,0 +1,41 @@
+/* *{
+    background-color: #070630;
+    color :rgb(250, 235, 215)
+} */
+.bgOne{
+background-color: #fff9da;
+}
+.bgTwo{
+    background-color: #fed2ff;
+}
+.bgThree{
+    background-color: rgb(255, 226, 98);
+}
+Link{
+    border: 1px solid rgb(249, 205, 205);
+}
+
+.bdr{
+    border : 1px solid black;
+
+}
+
+.btnOne{
+    background-color:  rgb(255, 208, 0);
+}
+
+.btnTwo{
+    background-color:  rgb(0, 255, 234);
+}
+.btnThree{
+    background-color: #d5cbb8;
+}
+.btnFour{
+    background-color: #fdd851;
+}
+
+.fc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
