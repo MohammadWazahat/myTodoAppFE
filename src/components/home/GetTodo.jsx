@@ -104,23 +104,9 @@ const GetTodo = () => {
 
   // //for filtering data
   const newData = state.myButtons.map((item) => {
-    // setArr(item.group)
     return item.group;
   });
-  // setArr(newData)
-  console.log(newData);
-  // const X = newData.toString();
-  // console.log(X)
-  // const myArray = X.split(" ");
-  // console.log(myArray)
-
-  // const x = [initialState.myButtons.group];
-  // console.log(x);
-  // // to merge all array in one
-  // const x = newData.flat();
-  // //   console.log(x)
-  // const Y = [...new Set(x)];
-  // console.log(Y);
+  // console.log(newData);
 
   if (state.isLoading == true) {
     return <div>Loading..............</div>;
@@ -172,7 +158,7 @@ const GetTodo = () => {
         </div>
       </section>
       <div className="flex mt-12">
-        <div className="flex flex-col w-1/4 mx-2">
+        {/* <div className="flex flex-col w-1/4 mx-2">
           <section className="">
             <button
               className="bdr w-full p-2 btnFour"
@@ -183,10 +169,8 @@ const GetTodo = () => {
           </section>
           <section className="flex flex-col gap-2 mt-12">
             {state.myButtons.map((item, index) => {
-              // console.log(item)
               return (
                 <div key={index}>
-                  {/* <button className="bdr" onClick={()=>filterByGroup(item)}> */}
                   <button
                     className="bdr w-full"
                     onClick={() => FilterByGroup(item)}
@@ -197,9 +181,9 @@ const GetTodo = () => {
               );
             })}
           </section>
-        </div>
+        </div> */}
 
-        <div className="w-3/4">
+        <div className="w-full">
           <section className="">
             <div className="">
               <div className=" grid grid-cols-1 mx-4 gap-4 ">

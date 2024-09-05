@@ -17,18 +17,18 @@ const SingleTodoCard = (user) => {
             mode ? `w-full` : `border-2 border-green-500 text-gray-800 w-full `
           }
         >
-          <div className="bdr flex flex-col justify-between items-center p-2 gap-4 rounded w-full">
-            <div className="flex gap-4 ">
-              <Link className="" to={`/read/` + user.id}>
-                <div className="text-xl hover:text-orange-400">
-                  {user.title}
+          <div className="bdr flex flex-col justify-between items-center p-2 gap-4 rounded ">
+            <Link className="w-full " to={`/read/` + user.id}>
+              <div>
+                <div className="fc text-xl hover:text-orange-400 ">
+                    {user.title}
                 </div>
-              </Link>
-            </div>
-            <div className="flex gap-4 w-full justify-between">
-              <div>{user.group}</div>
-              <div>{user.date}</div>
-            </div>
+                <div className="flex justify-between mt-3">
+                  <div>{user.group}</div>
+                  <div>{user.date}</div>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
