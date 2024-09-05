@@ -3,7 +3,6 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AddTodo from "./addTodo/AddTodo";
 import UpdateTodo from "./updateTodo/UpdateTodo";
 import ReadSingleTodo from "./home/ReadSingleTodo";
-import TestRedux from "./TestRedux/TestRedux";
 import Home from "./home/Home";
 
 const MyApp = () => {
@@ -23,10 +22,6 @@ const MyApp = () => {
     {
       path: "/read/:id",
       element: <ReadSingleTodo />,
-    },
-    {
-      path: "/testRedux",
-      element: <TestRedux />,
     },
   ]);
 
